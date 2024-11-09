@@ -64,9 +64,9 @@ def numpy_to_audio_segment(audio_arr, sampling_rate):
     # Convert to AudioSegment
     return AudioSegment.from_wav(byte_io)
 
-def script_to_speech(conversations):
-    parler_model = get_parler_model()
-    bark_model = get_bark_model()
+def script_to_speech(conversations, device="cpu"):
+    parler_model = get_parler_model(device=device)
+    bark_model = get_bark_model(device=device)
 
     final_audio = None
 

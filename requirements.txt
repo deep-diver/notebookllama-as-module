@@ -1,0 +1,9 @@
+toml
+tqdm
+numpy
+torch
+pydub
+scipy
+google-generativeai
+transformers
+git+https://github.com/huggingface/parler-tts.git
